@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Burugesta</title>
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="add-order-page">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-casher">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <a href="#"><img src="assets/img/header-logo.png" alt="" class="img-fluid"></a>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="add-order.html">إضافة اوردر</a></li>
+          <li><a class="nav-link scrollto" href="delivery.html">دليفيري</a></li>
+          <li><a class="nav-link scrollto" href="inner-kitchen.html">داخل المطعم</a></li>
+          <li><a class="nav-link scrollto" href="orders-page.html">الطلبات</a></li>
+          <li><a class="nav-link scrollto active" href="menu.html" style="color:#FE9807;">القائمه</a></li>
+
+          <li><a class="nav-link scrollto" href="#" id="nav-2"><img src="assets/img/user.png"> <span> حسابي</span></a>
+          </li>
+          <li class="dropdown"><a href="#"><span>العربية</span>
+              <i class="fa fa-caret-down"></i></a>
+            <ul>
+              <li><a href="#">الإنجليزية</a></li>
+            </ul>
+          </li>
+          <li><a class="login-btn nav-link" href="index.html">تسجيل الخروج</a></li>
+        </ul>
+        <i class="fa fa-bars mobile-nav-toggle"></i>
+      </nav><!-- navbar -->
+    </div>
+  </header><!-- End Header -->
+
+<section id="add-order-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="order-details-window">
+          <div class="tab">
+            <button class="tablinks" onclick="opentab(event, 'ChBu')">تشكن برجر</button>
+            <button class="tablinks" onclick="opentab(event, 'BeefBu')">بيف برجر</button>
+            <button class="tablinks" onclick="opentab(event, 'sideP')">أطباق جانبية</button>
+            <button class="tablinks" onclick="opentab(event, 'appetizers')">مقبلات</button>
+            <button class="tablinks" onclick="opentab(event, 'drinks')">مشروبات</button>
+          </div>
+
+          <div id="ChBu" class="tabcontent">
+            <div class="row">
+              <div class="col card">
+                <img src="assets/img/chicken-rio.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-chiken-1" name="chiken-1">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/chicken-burgur-2.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-chiken-2" name="chiken-2">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/chiken-burguresta.png">
+                <form action="/action_page.php">
+                  <p>برجريستا</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-chiken-3" name="chiken-3">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/ch-bur.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-chiken-4" name="chiken-4">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/ch-classic.png">
+                <form action="/action_page.php">
+                  <p> تشكن كلاسيك</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-chiken-5" name="chiken-5">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/ch-bur.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-chiken-6" name="chiken-6">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/chicken-rio.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-chiken-7" name="chiken-7">
+                </form>
+              </div>
+            </div>
+        </div>
+
+
+        <div id="BeefBu" class="tabcontent">
+            <div class="row">
+              <div class="col card">
+                <img src="assets/img/chicken-rio.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-beef-1" name="beef-1">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/chicken-burgur-2.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-beef-2" name="beef-2">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/chiken-burguresta.png">
+                <form action="/action_page.php">
+                  <p>برجريستا</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-beef-3" name="beef-3">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/ch-bur.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-beef-4" name="beef-4">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/ch-classic.png">
+                <form action="/action_page.php">
+                  <p> تشكن كلاسيك</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-beef-5" name="beef-5">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/ch-bur.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-beef-6" name="beef-6">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/chicken-rio.png">
+                <form action="/action_page.php">
+                  <p>تشكن ريو</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-beef-7" name="beef-7">
+                </form>
+              </div>
+            </div>
+        </div>
+
+        <div id="sideP" class="tabcontent">
+            <div class="row">
+              <div class="col card">
+                <img src="assets/img/frise-2.png">
+                <form action="/action_page.php">
+                  <p>فرايز</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-sideP-1" name="sideP-1">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/cheesefrise.png">
+                <form action="/action_page.php">
+                  <p>تشيز فرايز</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-sideP-2" name="sideP-2">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/cheesyfrise.png">
+                <form action="/action_page.php">
+                  <p>تشيزي فرايز</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-sideP-3" name="sideP-3">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/shrimp.png">
+                <form action="/action_page.php">
+                  <p>فرايد شريمب</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-sideP-4" name="sideP-4">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/cagen.png">
+                <form action="/action_page.php">
+                  <p>كاجن</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-sideP-5" name="sideP-5">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/cheesepasta.png">
+                <form action="/action_page.php">
+                  <p>تشيز باستا</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-sideP-6" name="sideP-6">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/strips.png">
+                <form action="/action_page.php">
+                  <p>ستريبس</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-sideP-7" name="sideP-7">
+                </form>
+              </div>
+
+              <div class="col card">
+                <img src="assets/img/crispyfrise.png">
+                <form action="/action_page.php">
+                  <p>كرسبي فرايز</p>
+                  <p>
+                    <span>100</span> جنيه
+                  </p>
+                  <input type="radio" id="order-sideP-8" name="sideP-8">
+                </form>
+              </div>
+            </div>
+        </div>
+
+        <div id="appetizers" class="tabcontent">
+    <div class="row">
+      <div class="col card">
+        <img src="assets/img/classic-sauce.png">
+        <form action="/action_page.php">
+          <p>كلاسيك صوص</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-appetizers-1" name="appetizers-1">
+        </form>
+      </div>
+
+      <div class="col card">
+        <img src="assets/img/golden-sauce.png">
+        <form action="/action_page.php">
+          <p>جولدن صوص</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-appetizers-2" name="appetizers-2">
+        </form>
+      </div>
+
+      <div class="col card">
+        <img src="assets/img/katchup.png">
+        <form action="/action_page.php">
+          <p>كاتشب</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-appetizers-3" name="appetizers-3">
+        </form>
+      </div>
+
+      <div class="col card">
+        <img src="assets/img/mabel-sauce.png">
+        <form action="/action_page.php">
+          <p>مابل صوص</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-appetizers-4" name="appetizers-4">
+        </form>
+      </div>
+
+      <div class="col card">
+        <img src="assets/img/ransh-sauce.png">
+        <form action="/action_page.php">
+          <p>رانش صوص</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-appetizers-5" name="appetizers-5">
+        </form>
+      </div>
+</div>
+        </div>
+
+         <div id="drinks" class="tabcontent">
+    <div class="row">
+      <div class="col card">
+        <img src="assets/img/cola.png">
+        <form action="/action_page.php">
+          <p>كوكاكولا</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-drinks-1" name="drinks-1">
+        </form>
+      </div>
+
+      <div class="col card">
+        <img src="assets/img/pepsi.png">
+        <form action="/action_page.php">
+          <p>بيبسي</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-drinks-2" name="drinks-2">
+        </form>
+      </div>
+
+      <div class="col card">
+        <img src="assets/img/redbull.png">
+        <form action="/action_page.php">
+          <p>ريدبول</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-drinks-3" name="drinks-3">
+        </form>
+      </div>
+
+      <div class="col card">
+        <img src="assets/img/sprite.png">
+        <form action="/action_page.php">
+          <p>سبرايت</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-drinks-4" name="drinks-4">
+        </form>
+      </div>
+
+      <div class="col card">
+        <img src="assets/img/fanta.png">
+        <form action="/action_page.php">
+          <p>فانتا</p>
+          <p>
+            <span>10</span> جنيه
+          </p>
+          <input type="radio" id="order-drinks-5" name="drinks-5">
+        </form>
+      </div>
+    </div>
+         </div>
+
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer mt-auto p-1">
+    <div class="container text-center">
+    <hr>
+    <span class="text-muted">حقوق النشر محفوظة لمطعم BURGESTRA </span>
+    </div>
+</footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+    function opentab(evt, plateName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(plateName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }    
+    </script> 
+    </body>
+    </html>

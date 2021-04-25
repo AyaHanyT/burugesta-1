@@ -27,7 +27,7 @@
   <header id="header" class="fixed-top d-flex align-items-center header-casher">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="logo">
-        <a href="index.html"><img src="assets/img/header-logo.png" alt="" class="img-fluid"></a>
+        <a href="#"><img src="assets/img/header-logo.png" alt="" class="img-fluid"></a>
       </div>
       <nav id="navbar" class="navbar">
         <ul>
@@ -39,7 +39,7 @@
               <li><a href="#">الإنجليزية</a></li>
             </ul>
           </li>
-          <li><a class="login-btn nav-link scrollto" href="login.html">تسجيل الخروج</a></li>
+          <li><a class="login-btn nav-link scrollto" href="index.html">تسجيل الخروج</a></li>
         </ul>
         <i class="fa fa-bars mobile-nav-toggle"></i>
       </nav><!-- navbar -->
@@ -48,8 +48,6 @@
   <section id="delivery-section">
     <div class="container">
             <div class="row">
-              <div class="col-12">
-              </div>
               <div class="col-12" id="order-details-window">
                 <div class="tab text-center">
                   <button class="tablinks" style="float:right;" onclick="opentab(event, 'current')">الطلبات الحاليه</button>
@@ -65,8 +63,7 @@
                             <p> قيد التحضير</p>
                         </header>
                         <div class="card-body">
-                            <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
-
+                            <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
                         <p> رقم الطلب 
                             <strong> #1265</strong>
                         </p>
@@ -99,17 +96,165 @@
                               </tr>
                             </tbody>
                           </table>
-
+                          <div id="toprint">
+                          <table  dir="rtl" class="table text-center" style="font-size: 12px;">
+                              <thead>
+                                <tr>
+                                  <th colspan="4">Burugesta</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td id="timeid"></td>
+                                  <td id="dateid"></td>
+                                  <td colspan="2">Branch: Ardya</td>
+                                </tr>
+                                <tr>
+                                  <td>فاتورة:</td>
+                                  <td>175210001</td>
+                                  <td colspan="2">1423531212</td>
+                                </tr>
+                                <tr>
+                                  <td>نوع الطلب</td>
+                                  <td>توصيل</td>
+                                  <td>كاشير</td>
+                                  <td>13</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات العميل</th>
+                                </tr>
+                                <tr>
+                                  <td>الاسم</td>
+                                  <td colspan="3"> اسم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>الهاتف</td>
+                                  <td colspan="3"> رقم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>العنون</td>
+                                  <td colspan="3"> عنوان العميل</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات الطلب</th>
+                                </tr>
+                                <tr>
+                                  <td>
+برجريستا
+                                  </td>
+                                  <td>
+2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    جبن
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    مشروم
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                  <td rowspan="2">
+                                    3
+                                  </td>
+                                  <td rowspan="2">
+                                    9
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    صوص
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    ملاحظات
+                                  </td>
+                                  <td colspan="3">
+-----
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الاجمالي
+                                  </td>
+                                  <td colspan="3">
+                                    27.0000
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخصم
+                                  </td>
+                                  <td>
+                                    25%
+                                  </td>
+                                  <td colspan="2">
+                                  6.750
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخدمه
+                                  </td>
+                                  <td>
+                                    10%
+                                  </td>
+                                  <td colspan="2">
+                                  2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    التوصيل
+                                  </td>
+                                  <td colspan="3">
+                                    0.250
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    المدفوع
+                                  </td>
+                                  <td colspan="3">
+                                    10
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الرصيد
+                                  </td>
+                                  <td colspan="3">
+                                    12.950
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">
+                                    شكرا لزيارتنا
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                     </div>
-
                     <div class="col-3 card" id="card-1-id">
                         <header class="shipping">
                             <img src="assets/img/ready.png">
                             <p>جاهز للتوصيل</p>
                         </header>
                         <div class="card-body">
-                            <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
+                            <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
 
                         <p> رقم الطلب 
                             <strong> #1265</strong>
@@ -143,19 +288,165 @@
                               </tr>
                             </tbody>
                           </table>
+                          <div id="toprint">
+                            <table  dir="rtl" class="table text-center" style="font-size: 12px;">
+                                <thead>
+                                  <tr>
+                                    <th colspan="4">Burugesta</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td id="timeid"></td>
+                                    <td id="dateid"></td>
+                                    <td colspan="2">Branch: Ardya</td>
+                                  </tr>
+                                  <tr>
+                                    <td>فاتورة:</td>
+                                    <td>175210001</td>
+                                    <td colspan="2">1423531212</td>
+                                  </tr>
+                                  <tr>
+                                    <td>نوع الطلب</td>
+                                    <td>توصيل</td>
+                                    <td>كاشير</td>
+                                    <td>13</td>
+                                  </tr>
+                                  <tr>
+                                    <th colspan="4">بيانات العميل</th>
+                                  </tr>
+                                  <tr>
+                                    <td>الاسم</td>
+                                    <td colspan="3"> اسم العميل</td>
+                                  </tr>
+                                  <tr>
+                                    <td>الهاتف</td>
+                                    <td colspan="3"> رقم العميل</td>
+                                  </tr>
+                                  <tr>
+                                    <td>العنون</td>
+                                    <td colspan="3"> عنوان العميل</td>
+                                  </tr>
+                                  <tr>
+                                    <th colspan="4">بيانات الطلب</th>
+                                  </tr>
+                                  <tr>
+                                    <td>
+  برجريستا
+                                    </td>
+                                    <td>
+  2.700
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      جبن
+                                    </td>
+                                    <td>
+                                      0.100
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      مشروم
+                                    </td>
+                                    <td>
+                                      0.100
+                                    </td>
+                                    <td rowspan="2">
+                                      3
+                                    </td>
+                                    <td rowspan="2">
+                                      9
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      صوص
+                                    </td>
+                                    <td>
+                                      0.100
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      ملاحظات
+                                    </td>
+                                    <td colspan="3">
+  -----
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      الاجمالي
+                                    </td>
+                                    <td colspan="3">
+                                      27.0000
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      الخصم
+                                    </td>
+                                    <td>
+                                      25%
+                                    </td>
+                                    <td colspan="2">
+                                    6.750
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      الخدمه
+                                    </td>
+                                    <td>
+                                      10%
+                                    </td>
+                                    <td colspan="2">
+                                    2.700
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      التوصيل
+                                    </td>
+                                    <td colspan="3">
+                                      0.250
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      المدفوع
+                                    </td>
+                                    <td colspan="3">
+                                      10
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      الرصيد
+                                    </td>
+                                    <td colspan="3">
+                                      12.950
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th colspan="4">
+                                      شكرا لزيارتنا
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                         </div>
                     </div>
-
-
-
                     <div class="col-3 card" id="card-1-id">
                         <header class="making">
                             <img src="assets/img/making.png">
                             <p> قيد التحضير</p>
                         </header>
                         <div class="card-body">
-                            <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
-
+                            <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
                         <p> رقم الطلب 
                             <strong> #1265</strong>
                         </p>
@@ -188,11 +479,159 @@
                               </tr>
                             </tbody>
                           </table>
-
+                          <div id="toprint">
+                            <table  dir="rtl" class="table text-center" style="font-size: 12px;">
+                                <thead>
+                                  <tr>
+                                    <th colspan="4">Burugesta</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td id="timeid"></td>
+                                    <td id="dateid"></td>
+                                    <td colspan="2">Branch: Ardya</td>
+                                  </tr>
+                                  <tr>
+                                    <td>فاتورة:</td>
+                                    <td>175210001</td>
+                                    <td colspan="2">1423531212</td>
+                                  </tr>
+                                  <tr>
+                                    <td>نوع الطلب</td>
+                                    <td>توصيل</td>
+                                    <td>كاشير</td>
+                                    <td>13</td>
+                                  </tr>
+                                  <tr>
+                                    <th colspan="4">بيانات العميل</th>
+                                  </tr>
+                                  <tr>
+                                    <td>الاسم</td>
+                                    <td colspan="3"> اسم العميل</td>
+                                  </tr>
+                                  <tr>
+                                    <td>الهاتف</td>
+                                    <td colspan="3"> رقم العميل</td>
+                                  </tr>
+                                  <tr>
+                                    <td>العنون</td>
+                                    <td colspan="3"> عنوان العميل</td>
+                                  </tr>
+                                  <tr>
+                                    <th colspan="4">بيانات الطلب</th>
+                                  </tr>
+                                  <tr>
+                                    <td>
+  برجريستا
+                                    </td>
+                                    <td>
+  2.700
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      جبن
+                                    </td>
+                                    <td>
+                                      0.100
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      مشروم
+                                    </td>
+                                    <td>
+                                      0.100
+                                    </td>
+                                    <td rowspan="2">
+                                      3
+                                    </td>
+                                    <td rowspan="2">
+                                      9
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      صوص
+                                    </td>
+                                    <td>
+                                      0.100
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      ملاحظات
+                                    </td>
+                                    <td colspan="3">
+  -----
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      الاجمالي
+                                    </td>
+                                    <td colspan="3">
+                                      27.0000
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      الخصم
+                                    </td>
+                                    <td>
+                                      25%
+                                    </td>
+                                    <td colspan="2">
+                                    6.750
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      الخدمه
+                                    </td>
+                                    <td>
+                                      10%
+                                    </td>
+                                    <td colspan="2">
+                                    2.700
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      التوصيل
+                                    </td>
+                                    <td colspan="3">
+                                      0.250
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      المدفوع
+                                    </td>
+                                    <td colspan="3">
+                                      10
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      الرصيد
+                                    </td>
+                                    <td colspan="3">
+                                      12.950
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th colspan="4">
+                                      شكرا لزيارتنا
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-
               </div>
 
 
@@ -204,7 +643,7 @@
                           <p>إنتهى</p>
                       </header>
                       <div class="card-body">
-                          <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
+                          <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
 
                       <p> رقم الطلب 
                           <strong> #1265</strong>
@@ -238,7 +677,156 @@
                             </tr>
                           </tbody>
                         </table>
-
+                        <div id="toprint">
+                          <table  dir="rtl" class="table text-center" style="font-size: 12px;">
+                              <thead>
+                                <tr>
+                                  <th colspan="4">Burugesta</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td id="timeid"></td>
+                                  <td id="dateid"></td>
+                                  <td colspan="2">Branch: Ardya</td>
+                                </tr>
+                                <tr>
+                                  <td>فاتورة:</td>
+                                  <td>175210001</td>
+                                  <td colspan="2">1423531212</td>
+                                </tr>
+                                <tr>
+                                  <td>نوع الطلب</td>
+                                  <td>توصيل</td>
+                                  <td>كاشير</td>
+                                  <td>13</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات العميل</th>
+                                </tr>
+                                <tr>
+                                  <td>الاسم</td>
+                                  <td colspan="3"> اسم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>الهاتف</td>
+                                  <td colspan="3"> رقم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>العنون</td>
+                                  <td colspan="3"> عنوان العميل</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات الطلب</th>
+                                </tr>
+                                <tr>
+                                  <td>
+برجريستا
+                                  </td>
+                                  <td>
+2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    جبن
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    مشروم
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                  <td rowspan="2">
+                                    3
+                                  </td>
+                                  <td rowspan="2">
+                                    9
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    صوص
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    ملاحظات
+                                  </td>
+                                  <td colspan="3">
+-----
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الاجمالي
+                                  </td>
+                                  <td colspan="3">
+                                    27.0000
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخصم
+                                  </td>
+                                  <td>
+                                    25%
+                                  </td>
+                                  <td colspan="2">
+                                  6.750
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخدمه
+                                  </td>
+                                  <td>
+                                    10%
+                                  </td>
+                                  <td colspan="2">
+                                  2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    التوصيل
+                                  </td>
+                                  <td colspan="3">
+                                    0.250
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    المدفوع
+                                  </td>
+                                  <td colspan="3">
+                                    10
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الرصيد
+                                  </td>
+                                  <td colspan="3">
+                                    12.950
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">
+                                    شكرا لزيارتنا
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                       </div>
                   </div>
 
@@ -248,7 +836,7 @@
                           <p>إنتهى</p>
                       </header>
                       <div class="card-body">
-                          <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
+                          <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
 
                       <p> رقم الطلب 
                           <strong> #1265</strong>
@@ -282,10 +870,158 @@
                             </tr>
                           </tbody>
                         </table>
+                        <div id="toprint">
+                          <table  dir="rtl" class="table text-center" style="font-size: 12px;">
+                              <thead>
+                                <tr>
+                                  <th colspan="4">Burugesta</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td id="timeid"></td>
+                                  <td id="dateid"></td>
+                                  <td colspan="2">Branch: Ardya</td>
+                                </tr>
+                                <tr>
+                                  <td>فاتورة:</td>
+                                  <td>175210001</td>
+                                  <td colspan="2">1423531212</td>
+                                </tr>
+                                <tr>
+                                  <td>نوع الطلب</td>
+                                  <td>توصيل</td>
+                                  <td>كاشير</td>
+                                  <td>13</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات العميل</th>
+                                </tr>
+                                <tr>
+                                  <td>الاسم</td>
+                                  <td colspan="3"> اسم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>الهاتف</td>
+                                  <td colspan="3"> رقم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>العنون</td>
+                                  <td colspan="3"> عنوان العميل</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات الطلب</th>
+                                </tr>
+                                <tr>
+                                  <td>
+برجريستا
+                                  </td>
+                                  <td>
+2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    جبن
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    مشروم
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                  <td rowspan="2">
+                                    3
+                                  </td>
+                                  <td rowspan="2">
+                                    9
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    صوص
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    ملاحظات
+                                  </td>
+                                  <td colspan="3">
+-----
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الاجمالي
+                                  </td>
+                                  <td colspan="3">
+                                    27.0000
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخصم
+                                  </td>
+                                  <td>
+                                    25%
+                                  </td>
+                                  <td colspan="2">
+                                  6.750
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخدمه
+                                  </td>
+                                  <td>
+                                    10%
+                                  </td>
+                                  <td colspan="2">
+                                  2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    التوصيل
+                                  </td>
+                                  <td colspan="3">
+                                    0.250
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    المدفوع
+                                  </td>
+                                  <td colspan="3">
+                                    10
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الرصيد
+                                  </td>
+                                  <td colspan="3">
+                                    12.950
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">
+                                    شكرا لزيارتنا
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                       </div>
                   </div>
-
-
 
                   <div class="col-3 card" id="card-1-id">
                       <header class="done">
@@ -293,7 +1029,7 @@
                           <p>إنتهى</p>
                       </header>
                       <div class="card-body">
-                          <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
+                          <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
 
                       <p> رقم الطلب 
                           <strong> #1265</strong>
@@ -327,11 +1063,159 @@
                             </tr>
                           </tbody>
                         </table>
-
+                        <div id="toprint">
+                          <table  dir="rtl" class="table text-center" style="font-size: 12px;">
+                              <thead>
+                                <tr>
+                                  <th colspan="4">Burugesta</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td id="timeid"></td>
+                                  <td id="dateid"></td>
+                                  <td colspan="2">Branch: Ardya</td>
+                                </tr>
+                                <tr>
+                                  <td>فاتورة:</td>
+                                  <td>175210001</td>
+                                  <td colspan="2">1423531212</td>
+                                </tr>
+                                <tr>
+                                  <td>نوع الطلب</td>
+                                  <td>توصيل</td>
+                                  <td>كاشير</td>
+                                  <td>13</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات العميل</th>
+                                </tr>
+                                <tr>
+                                  <td>الاسم</td>
+                                  <td colspan="3"> اسم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>الهاتف</td>
+                                  <td colspan="3"> رقم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>العنون</td>
+                                  <td colspan="3"> عنوان العميل</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات الطلب</th>
+                                </tr>
+                                <tr>
+                                  <td>
+برجريستا
+                                  </td>
+                                  <td>
+2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    جبن
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    مشروم
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                  <td rowspan="2">
+                                    3
+                                  </td>
+                                  <td rowspan="2">
+                                    9
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    صوص
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    ملاحظات
+                                  </td>
+                                  <td colspan="3">
+-----
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الاجمالي
+                                  </td>
+                                  <td colspan="3">
+                                    27.0000
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخصم
+                                  </td>
+                                  <td>
+                                    25%
+                                  </td>
+                                  <td colspan="2">
+                                  6.750
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخدمه
+                                  </td>
+                                  <td>
+                                    10%
+                                  </td>
+                                  <td colspan="2">
+                                  2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    التوصيل
+                                  </td>
+                                  <td colspan="3">
+                                    0.250
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    المدفوع
+                                  </td>
+                                  <td colspan="3">
+                                    10
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الرصيد
+                                  </td>
+                                  <td colspan="3">
+                                    12.950
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">
+                                    شكرا لزيارتنا
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                       </div>
                   </div>
               </div>
-
             </div>
 
 
@@ -343,7 +1227,7 @@
                           <p>إنتهى</p>
                       </header>
                       <div class="card-body">
-                          <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
+                          <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
 
                       <p> رقم الطلب 
                           <strong> #1265</strong>
@@ -377,7 +1261,156 @@
                             </tr>
                           </tbody>
                         </table>
-
+                        <div id="toprint">
+                          <table  dir="rtl" class="table text-center" style="font-size: 12px;">
+                              <thead>
+                                <tr>
+                                  <th colspan="4">Burugesta</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td id="timeid"></td>
+                                  <td id="dateid"></td>
+                                  <td colspan="2">Branch: Ardya</td>
+                                </tr>
+                                <tr>
+                                  <td>فاتورة:</td>
+                                  <td>175210001</td>
+                                  <td colspan="2">1423531212</td>
+                                </tr>
+                                <tr>
+                                  <td>نوع الطلب</td>
+                                  <td>توصيل</td>
+                                  <td>كاشير</td>
+                                  <td>13</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات العميل</th>
+                                </tr>
+                                <tr>
+                                  <td>الاسم</td>
+                                  <td colspan="3"> اسم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>الهاتف</td>
+                                  <td colspan="3"> رقم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>العنون</td>
+                                  <td colspan="3"> عنوان العميل</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات الطلب</th>
+                                </tr>
+                                <tr>
+                                  <td>
+برجريستا
+                                  </td>
+                                  <td>
+2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    جبن
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    مشروم
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                  <td rowspan="2">
+                                    3
+                                  </td>
+                                  <td rowspan="2">
+                                    9
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    صوص
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    ملاحظات
+                                  </td>
+                                  <td colspan="3">
+-----
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الاجمالي
+                                  </td>
+                                  <td colspan="3">
+                                    27.0000
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخصم
+                                  </td>
+                                  <td>
+                                    25%
+                                  </td>
+                                  <td colspan="2">
+                                  6.750
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخدمه
+                                  </td>
+                                  <td>
+                                    10%
+                                  </td>
+                                  <td colspan="2">
+                                  2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    التوصيل
+                                  </td>
+                                  <td colspan="3">
+                                    0.250
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    المدفوع
+                                  </td>
+                                  <td colspan="3">
+                                    10
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الرصيد
+                                  </td>
+                                  <td colspan="3">
+                                    12.950
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">
+                                    شكرا لزيارتنا
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                       </div>
                   </div>
 
@@ -387,7 +1420,7 @@
                           <p>إنتهى</p>
                       </header>
                       <div class="card-body">
-                          <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
+                          <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
 
                       <p> رقم الطلب 
                           <strong> #1265</strong>
@@ -421,10 +1454,158 @@
                             </tr>
                           </tbody>
                         </table>
+                        <div id="toprint">
+                          <table  dir="rtl" class="table text-center" style="font-size: 12px;">
+                              <thead>
+                                <tr>
+                                  <th colspan="4">Burugesta</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td id="timeid"></td>
+                                  <td id="dateid"></td>
+                                  <td colspan="2">Branch: Ardya</td>
+                                </tr>
+                                <tr>
+                                  <td>فاتورة:</td>
+                                  <td>175210001</td>
+                                  <td colspan="2">1423531212</td>
+                                </tr>
+                                <tr>
+                                  <td>نوع الطلب</td>
+                                  <td>توصيل</td>
+                                  <td>كاشير</td>
+                                  <td>13</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات العميل</th>
+                                </tr>
+                                <tr>
+                                  <td>الاسم</td>
+                                  <td colspan="3"> اسم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>الهاتف</td>
+                                  <td colspan="3"> رقم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>العنون</td>
+                                  <td colspan="3"> عنوان العميل</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات الطلب</th>
+                                </tr>
+                                <tr>
+                                  <td>
+برجريستا
+                                  </td>
+                                  <td>
+2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    جبن
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    مشروم
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                  <td rowspan="2">
+                                    3
+                                  </td>
+                                  <td rowspan="2">
+                                    9
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    صوص
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    ملاحظات
+                                  </td>
+                                  <td colspan="3">
+-----
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الاجمالي
+                                  </td>
+                                  <td colspan="3">
+                                    27.0000
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخصم
+                                  </td>
+                                  <td>
+                                    25%
+                                  </td>
+                                  <td colspan="2">
+                                  6.750
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخدمه
+                                  </td>
+                                  <td>
+                                    10%
+                                  </td>
+                                  <td colspan="2">
+                                  2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    التوصيل
+                                  </td>
+                                  <td colspan="3">
+                                    0.250
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    المدفوع
+                                  </td>
+                                  <td colspan="3">
+                                    10
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الرصيد
+                                  </td>
+                                  <td colspan="3">
+                                    12.950
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">
+                                    شكرا لزيارتنا
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                       </div>
                   </div>
-
-
 
                   <div class="col-3 card" id="card-1-id">
                       <header class="done">
@@ -432,7 +1613,7 @@
                           <p>إنتهى</p>
                       </header>
                       <div class="card-body">
-                          <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
+                          <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
 
                       <p> رقم الطلب 
                           <strong> #1265</strong>
@@ -466,11 +1647,159 @@
                             </tr>
                           </tbody>
                         </table>
-
+                        <div id="toprint">
+                          <table  dir="rtl" class="table text-center" style="font-size: 12px;">
+                              <thead>
+                                <tr>
+                                  <th colspan="4">Burugesta</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td id="timeid"></td>
+                                  <td id="dateid"></td>
+                                  <td colspan="2">Branch: Ardya</td>
+                                </tr>
+                                <tr>
+                                  <td>فاتورة:</td>
+                                  <td>175210001</td>
+                                  <td colspan="2">1423531212</td>
+                                </tr>
+                                <tr>
+                                  <td>نوع الطلب</td>
+                                  <td>توصيل</td>
+                                  <td>كاشير</td>
+                                  <td>13</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات العميل</th>
+                                </tr>
+                                <tr>
+                                  <td>الاسم</td>
+                                  <td colspan="3"> اسم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>الهاتف</td>
+                                  <td colspan="3"> رقم العميل</td>
+                                </tr>
+                                <tr>
+                                  <td>العنون</td>
+                                  <td colspan="3"> عنوان العميل</td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">بيانات الطلب</th>
+                                </tr>
+                                <tr>
+                                  <td>
+برجريستا
+                                  </td>
+                                  <td>
+2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    جبن
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    مشروم
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                  <td rowspan="2">
+                                    3
+                                  </td>
+                                  <td rowspan="2">
+                                    9
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    صوص
+                                  </td>
+                                  <td>
+                                    0.100
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    ملاحظات
+                                  </td>
+                                  <td colspan="3">
+-----
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الاجمالي
+                                  </td>
+                                  <td colspan="3">
+                                    27.0000
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخصم
+                                  </td>
+                                  <td>
+                                    25%
+                                  </td>
+                                  <td colspan="2">
+                                  6.750
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الخدمه
+                                  </td>
+                                  <td>
+                                    10%
+                                  </td>
+                                  <td colspan="2">
+                                  2.700
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    التوصيل
+                                  </td>
+                                  <td colspan="3">
+                                    0.250
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    المدفوع
+                                  </td>
+                                  <td colspan="3">
+                                    10
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    الرصيد
+                                  </td>
+                                  <td colspan="3">
+                                    12.950
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th colspan="4">
+                                    شكرا لزيارتنا
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                       </div>
                   </div>
               </div>
-
             </div>
 
 
@@ -492,11 +1821,9 @@
           </div>
         </div>
       </div>
-
-            </div>
-        </div>
-  </section>
-
+    </div>
+</div>
+</section>
 
   
   <footer class="footer mt-auto p-1">
@@ -528,8 +1855,14 @@
       document.getElementById(orderstatus).style.display = "block";
       evt.currentTarget.className += " active";
     }
-        function printDiv() { 
-            var divContents = document.getElementById("card-1-id").innerHTML; 
+    var d = new Date();
+document.getElementById("dateid").innerHTML = d.toLocaleDateString();
+var t = new Date();
+document.getElementById("timeid").innerHTML = t.toLocaleTimeString();
+
+        function printDiv() {
+          
+            var divContents = document.getElementById("toprint").innerHTML; 
             var a = window.open('', '', 'height=500, width=500'); 
             a.document.write(divContents); 
             a.document.close(); 

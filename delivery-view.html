@@ -27,14 +27,15 @@
   <header id="header" class="fixed-top d-flex align-items-center header-casher">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="logo">
-        <a href="index.html"><img src="assets/img/header-logo.png" alt="" class="img-fluid"></a>
+        <a href="#"><img src="assets/img/header-logo.png" alt="" class="img-fluid"></a>
       </div>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="add-order.html">إضافة اوردر</a></li>
+          <li><a class="nav-link scrollto" href="add-order-edit.html">إضافة اوردر</a></li>
           <li><a class="nav-link scrollto active" href="delivery.html" style="color: #FE9807;">دليفيري</a></li>
           <li><a class="nav-link scrollto" href="inner-kitchen.html">داخل المطعم</a></li>
           <li><a class="nav-link scrollto" href="orders-page.html">الطلبات</a></li>
+          <li><a class="nav-link scrollto" href="menu.html">القائمه</a></li>
           <li><a class="nav-link scrollto" href="#" id="nav-2"><img src="assets/img/user.png"> <span> حسابي</span></a>
           </li>
           <li class="dropdown"><a href="#"><span>العربية</span>
@@ -43,7 +44,7 @@
               <li><a href="#">الإنجليزية</a></li>
             </ul>
           </li>
-          <li><a class="login-btn nav-link scrollto" href="login.html">تسجيل الخروج</a></li>
+          <li><a class="login-btn nav-link scrollto" href="index.html">تسجيل الخروج</a></li>
         </ul>
         <i class="fa fa-bars mobile-nav-toggle"></i>
       </nav><!-- navbar -->
@@ -52,8 +53,6 @@
   <section id="delivery-section">
     <div class="container">
             <div class="row">
-              <div class="col-12">
-              </div>
               <div class="col-12" id="order-details-window">
                  <div class="row">
                     <div class="col-3 card" id="card-1-id">
@@ -62,8 +61,7 @@
                             <p>عطلان </p>
                         </header>
                         <div class="card-body">
-                            <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
-
+                            <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
                         <p> رقم الطلب 
                             <strong> #1265</strong>
                         </p>
@@ -96,7 +94,6 @@
                               </tr>
                             </tbody>
                           </table>
-
                         </div>
                     </div>
 
@@ -105,9 +102,8 @@
                             <img src="assets/img/delivery-icon.png">
                             <p> في الطريق</p>
                         </header>
-                        <div class="card-body">
-                            <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
-
+                     <div class="card-body">
+                            <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
                         <p> رقم الطلب 
                             <strong> #1265</strong>
                         </p>
@@ -140,7 +136,7 @@
                               </tr>
                             </tbody>
                           </table>
-                        </div>
+                     </div>
                     </div>
 
                     <div class="col-3 card" id="card-1-id">
@@ -149,8 +145,7 @@
                             <p>عطلان </p>
                         </header>
                         <div class="card-body">
-                            <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
-
+                            <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
                         <p> رقم الطلب 
                             <strong> #1265</strong>
                         </p>
@@ -183,7 +178,6 @@
                               </tr>
                             </tbody>
                           </table>
-
                         </div>
                     </div>
                 </div>
@@ -195,8 +189,7 @@
                             <p>عطلان </p>
                         </header>
                         <div class="card-body">
-                            <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
-
+                            <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
                         <p> رقم الطلب 
                             <strong> #1265</strong>
                         </p>
@@ -229,7 +222,6 @@
                               </tr>
                             </tbody>
                           </table>
-
                         </div>
                     </div>
 
@@ -239,8 +231,7 @@
                             <p> في الطريق</p>
                         </header>
                         <div class="card-body">
-                            <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
-
+                            <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
                         <p> رقم الطلب 
                             <strong> #1265</strong>
                         </p>
@@ -282,8 +273,7 @@
                             <p>عطلان </p>
                         </header>
                         <div class="card-body">
-                            <button class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
-
+                            <button id="img-card1" class="print" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/print.png"></button>
                         <p> رقم الطلب 
                             <strong> #1265</strong>
                         </p>
@@ -316,7 +306,6 @@
                               </tr>
                             </tbody>
                           </table>
-
                         </div>
                     </div>
               </div>
@@ -333,8 +322,7 @@
             هل انت متأكد من طباعة الطلب؟
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn" id="print" onclick="printDiv()" style="float: right; width: 45%;">نعم</button>
-
+              <button type="button" class="btn" id="print" onclick="printDiv()" style="float: right; width: 45%;">نعم</button>
               <button type="button" class="btn" data-bs-dismiss="modal" style="float: left; width: 45%;">لا</button>
             </div>
           </div>
@@ -343,8 +331,8 @@
 
             </div>
         </div>
+    </div>
   </section>
-
 
   
   <footer class="footer mt-auto p-1">
@@ -377,6 +365,7 @@
       evt.currentTarget.className += " active";
     }
         function printDiv() { 
+          document.getElementById('img-card1').style.display="none";
             var divContents = document.getElementById("card-1-id").innerHTML; 
             var a = window.open('', '', 'height=500, width=500'); 
             a.document.write(divContents); 
